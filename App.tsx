@@ -7,7 +7,6 @@
 
 import React from 'react';
 import type { PropsWithChildren } from 'react';
-import HomeScreen from './HomeScreen';
 import Login from './Login';
 import {
   SafeAreaView,
