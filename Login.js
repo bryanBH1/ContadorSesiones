@@ -31,6 +31,9 @@ class VentanaLogin extends React.Component {
             usuario: usuario
         });
 
+        // Detener el temporizador existente si está activo
+        BackgroundTimer.stopBackgroundTimer();
+
         // Guardar el inicio del tiempo en AsyncStorage
         try {
             await AsyncStorage.setItem('comienzoTiempo', comienzoTiempo.toString());
@@ -38,6 +41,7 @@ class VentanaLogin extends React.Component {
             console.log(error);
         }
 
+        // Iniciar un nuevo temporizador
         BackgroundTimer.runBackgroundTimer(() => {
             this.setState(prevState => ({
                 conteoTiempo: Date.now() - comienzoTiempo
@@ -263,6 +267,7 @@ class Login extends React.Component {
                         onPress={this.comprobacionLogin}
                     >
                         <Text style={styles.buttonText}>Entrar</Text>
+
                     </TouchableOpacity>
                 </View>
             </ImageBackground>
