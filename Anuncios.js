@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { StyleSheet, Text, View, Button, ImageBackground, FlatList } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import firestore from '@react-native-firebase/firestore';
-
+//cometario github
 const Anuncios = ({ Deslogeado }) => {
     const [data, setData] = useState([]);
 
