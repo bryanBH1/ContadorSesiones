@@ -31,6 +31,7 @@ type SectionProps = PropsWithChildren<{
 }>;
 
 function Section({ children, title }: SectionProps): React.JSX.Element {
+function Section({ children, title }: SectionProps): React.JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
   return (
     <View style={styles.sectionContainer}>
@@ -64,6 +65,8 @@ function App(): React.JSX.Element {
   };
 
   return (
+    //<HomeScreen />
+    <Login />
     //<HomeScreen />
     <Login />
   );

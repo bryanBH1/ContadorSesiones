@@ -67,7 +67,7 @@ const styles = StyleSheet.create({
     cerrasesion: {
         position: 'absolute',
         bottom: 20,
-
+        
     },
     anuncioContainer: {
         width: '80%',
@@ -77,7 +77,7 @@ const styles = StyleSheet.create({
         borderRadius: 10,
         alignItems: 'center',
         marginBottom: 20,
-
+        
     },
     listaAnuncios: {
         width: '80%',
